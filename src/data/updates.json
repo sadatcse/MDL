@@ -1,0 +1,47 @@
+[
+  {
+    "id": "update-1",
+    "type": "Media",
+    "title": "MDL Receives 'Excellence in Urban Development' Award 2026",
+    "source": "Daily Star Business",
+    "date": "May 08, 2026",
+    "image": "https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800",
+    "excerpt": "Mohammadi Developers Ltd. has been honored with the prestigious Urban Excellence Award for its contribution to modern architecture in Dhaka."
+  },
+  {
+    "id": "update-2",
+    "type": "Event",
+    "title": "Grand Launch of 'Homes-49' Luxury Condominiums",
+    "source": "MDL Events",
+    "date": "May 02, 2026",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+    "excerpt": "Join us for the exclusive launch event of our newest premium residential project in the heart of Gulshan."
+  },
+  {
+    "id": "update-3",
+    "type": "Media",
+    "title": "Sustainable Living: MDL's Vision for the Future",
+    "source": "Financial Express",
+    "date": "April 28, 2026",
+    "image": "https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&q=80&w=800",
+    "excerpt": "An in-depth interview with MDL's Managing Director on the future of eco-friendly real estate in Bangladesh."
+  },
+  {
+    "id": "update-4",
+    "type": "Event",
+    "title": "CSR Initiative: Tree Plantation Drive 2026",
+    "source": "MDL CSR",
+    "date": "April 15, 2026",
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800",
+    "excerpt": "MDL team and residents came together to plant over 500 trees across our completed projects in Mohammadpur."
+  },
+  {
+    "id": "update-5",
+    "type": "Media",
+    "title": "Interior Trends: The Minimalist Shift",
+    "source": "Design Digest",
+    "date": "April 10, 2026",
+    "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800",
+    "excerpt": "MDL's design team shares insights on the growing trend of minimalist luxury in modern urban apartments."
+  }
+]

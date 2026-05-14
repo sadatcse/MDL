@@ -1,0 +1,1386 @@
+[
+    {
+        "id": "aurora-heights-01",
+        "project_name": "Aurora Heights",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Plot # 12, Road # 5A, Bashundhara R/A, Baridhara, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Plot+12+Road+5A+Bashundhara+RA+Baridhara+Dhaka",
+        "latitude": 23.8123,
+        "longitude": 90.4231,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Baridhara",
+        "postal_code": "1229",
+        "total_floors": 14,
+        "total_units": 56,
+        "year_started": 2023,
+        "year_completion": 2026,
+        "photos": [
+            "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop"
+        ],
+        "description": "Aurora Heights is a premium 14-storey residential tower located in the prestigious Bashundhara R/A, Baridhara. Offering panoramic city views, modern interiors, and world-class amenities including a rooftop garden, gym, and swimming pool.",
+        "amenities": [
+            "Swimming Pool",
+            "Rooftop Garden",
+            "Gymnasium",
+            "24/7 Security",
+            "Backup Generator",
+            "Underground Parking",
+            "Children's Play Area",
+            "Community Hall"
+        ],
+        "flat_types": [
+            {
+                "type": "A",
+                "size_sqft": 2400,
+                "bedrooms": 4,
+                "bathrooms": 4,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_per_sqft": 9500
+            },
+            {
+                "type": "B",
+                "size_sqft": 2100,
+                "bedrooms": 4,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 2,
+                "price_per_sqft": 9200
+            },
+            {
+                "type": "C",
+                "size_sqft": 1750,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 8800
+            },
+            {
+                "type": "D",
+                "size_sqft": 1400,
+                "bedrooms": 3,
+                "bathrooms": 2,
+                "kitchen": 1,
+                "veranda": 1,
+                "car_parking": 1,
+                "price_per_sqft": 8500
+            }
+        ],
+        "flat_size": "1400 - 2400 sqft",
+        "price_range": "BDT 1.19 Cr - 2.28 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/aurora-heights.pdf",
+        "project_url": "https://zenithproperties.fake/property/aurora-heights/",
+        "for_sale": true,
+        "features": [
+            "German fittings",
+            "Italian marble floors",
+            "Smart home system",
+            "CCTV surveillance"
+        ]
+    },
+    {
+        "id": "skyline-plaza-01",
+        "project_name": "Skyline Plaza",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Plot # 8, Gulshan Avenue, Gulshan-2, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Plot+8+Gulshan+Avenue+Gulshan+2+Dhaka",
+        "latitude": 23.7936,
+        "longitude": 90.4142,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Commercial",
+        "city": "Dhaka",
+        "area": "Gulshan",
+        "postal_code": "1212",
+        "total_floors": 22,
+        "total_units": 88,
+        "year_started": 2022,
+        "year_completion": 2025,
+        "photos": [
+            "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=800&fit=crop"
+        ],
+        "description": "Skyline Plaza is a landmark Grade-A commercial tower in Gulshan-2 featuring premium office spaces, conference facilities, and ground-floor retail. Designed for global corporations and leading local businesses demanding the highest standard of workspace.",
+        "amenities": [
+            "High-speed elevators",
+            "24/7 Security",
+            "Backup Power",
+            "Fibre optic internet",
+            "Conference rooms",
+            "Food court",
+            "Helical parking",
+            "Prayer room"
+        ],
+        "unit_types": [
+            {
+                "type": "Standard Office",
+                "size_sqft": 1200,
+                "rooms": 4,
+                "bathrooms": 2,
+                "car_parking": 2,
+                "price_per_sqft": 12000
+            },
+            {
+                "type": "Large Office",
+                "size_sqft": 2500,
+                "rooms": 8,
+                "bathrooms": 4,
+                "car_parking": 4,
+                "price_per_sqft": 11500
+            },
+            {
+                "type": "Floor Plate",
+                "size_sqft": 5000,
+                "rooms": 16,
+                "bathrooms": 8,
+                "car_parking": 8,
+                "price_per_sqft": 11000
+            },
+            {
+                "type": "Retail Unit",
+                "size_sqft": 600,
+                "rooms": 1,
+                "bathrooms": 1,
+                "car_parking": 1,
+                "price_per_sqft": 18000
+            }
+        ],
+        "unit_size": "600 - 5000 sqft",
+        "price_range": "BDT 72 Lac - 5.5 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/skyline-plaza.pdf",
+        "project_url": "https://zenithproperties.fake/property/skyline-plaza/",
+        "for_sale": true,
+        "features": [
+            "LEED certified design",
+            "VRF air conditioning",
+            "Raised floor system",
+            "BMS automation",
+            "EV charging points"
+        ]
+    },
+    {
+        "id": "crystal-cove-02",
+        "project_name": "Crystal Cove",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "House # 17, Road # 9, Sector-7, Uttara, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=House+17+Road+9+Sector+7+Uttara+Dhaka",
+        "latitude": 23.8753,
+        "longitude": 90.4001,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Uttara",
+        "postal_code": "1230",
+        "total_floors": 10,
+        "total_units": 30,
+        "year_started": 2023,
+        "year_completion": 2025,
+        "photos": [
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&h=800&fit=crop"
+        ],
+        "description": "Crystal Cove is a boutique low-rise residential building in Uttara Sector-7, offering spacious family apartments with landscaped surroundings, top-tier security, and easy access to schools and shopping centres.",
+        "amenities": [
+            "Landscaped garden",
+            "Security cabin",
+            "Backup generator",
+            "Rooftop terrace",
+            "Covered parking"
+        ],
+        "flat_types": [
+            {
+                "type": "A",
+                "size_sqft": 2200,
+                "bedrooms": 4,
+                "bathrooms": 4,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_per_sqft": 7500
+            },
+            {
+                "type": "B",
+                "size_sqft": 1900,
+                "bedrooms": 4,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 7200
+            },
+            {
+                "type": "C",
+                "size_sqft": 1550,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 6900
+            }
+        ],
+        "flat_size": "1550 - 2200 sqft",
+        "price_range": "BDT 1.07 Cr - 1.65 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/crystal-cove.pdf",
+        "project_url": "https://zenithproperties.fake/property/crystal-cove/",
+        "for_sale": true,
+        "features": [
+            "Earthquake-resistant structure",
+            "Solar water heater",
+            "Intercom system"
+        ]
+    },
+    {
+        "id": "nexus-tower-01",
+        "project_name": "Nexus Tower",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Plot # 33, Tejgaon Industrial Area, Tejgaon, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Plot+33+Tejgaon+Industrial+Area+Dhaka",
+        "latitude": 23.7705,
+        "longitude": 90.3988,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Mixed-Use",
+        "city": "Dhaka",
+        "area": "Tejgaon",
+        "postal_code": "1215",
+        "total_floors": 28,
+        "total_units": 140,
+        "year_started": 2021,
+        "year_completion": 2025,
+        "photos": [
+            "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&h=800&fit=crop"
+        ],
+        "description": "Nexus Tower is Dhaka's most ambitious mixed-use development — combining luxury residences on upper floors, Grade-A offices on mid-floors, and a vibrant retail podium at ground level. A self-contained vertical community in the heart of Tejgaon.",
+        "amenities": [
+            "Infinity pool",
+            "Co-working lounge",
+            "Retail arcade",
+            "Food court",
+            "Cinema room",
+            "Kids club",
+            "Concierge service",
+            "Helipad"
+        ],
+        "unit_types": [
+            {
+                "type": "Residential – Type A",
+                "size_sqft": 2800,
+                "bedrooms": 4,
+                "bathrooms": 4,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_per_sqft": 11000
+            },
+            {
+                "type": "Residential – Type B",
+                "size_sqft": 1900,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 10500
+            },
+            {
+                "type": "Office – Standard",
+                "size_sqft": 1500,
+                "rooms": 5,
+                "bathrooms": 2,
+                "car_parking": 2,
+                "price_per_sqft": 13500
+            },
+            {
+                "type": "Office – Premium Floor",
+                "size_sqft": 4000,
+                "rooms": 14,
+                "bathrooms": 5,
+                "car_parking": 5,
+                "price_per_sqft": 13000
+            },
+            {
+                "type": "Retail Showroom",
+                "size_sqft": 1200,
+                "rooms": 1,
+                "bathrooms": 2,
+                "car_parking": 2,
+                "price_per_sqft": 22000
+            },
+            {
+                "type": "Retail Kiosk",
+                "size_sqft": 350,
+                "rooms": 1,
+                "bathrooms": 1,
+                "car_parking": 0,
+                "price_per_sqft": 30000
+            }
+        ],
+        "unit_size": "350 - 4000 sqft",
+        "price_range": "BDT 1.05 Cr - 5.2 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/nexus-tower.pdf",
+        "project_url": "https://zenithproperties.fake/property/nexus-tower/",
+        "for_sale": true,
+        "features": [
+            "Double-height lobby",
+            "Sky lounge on 15th floor",
+            "Smart parking system",
+            "District cooling",
+            "EV charging stations"
+        ]
+    },
+    {
+        "id": "verdant-villas-01",
+        "project_name": "Verdant Villas",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Sector # 11, Block-D, Purbachal New Town, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Sector+11+Block+D+Purbachal+New+Town+Dhaka",
+        "latitude": 23.8100,
+        "longitude": 90.5300,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Villa / Land",
+        "city": "Dhaka",
+        "area": "Purbachal",
+        "postal_code": "1461",
+        "total_floors": 3,
+        "total_units": 24,
+        "year_started": 2022,
+        "year_completion": 2026,
+        "photos": [
+            "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop"
+        ],
+        "description": "Verdant Villas offers exclusive stand-alone villas in the serene Purbachal New Town — each home surrounded by lush greenery, private pools, and large gardens. Ideal for families seeking privacy and space far from the urban rush.",
+        "amenities": [
+            "Private swimming pool",
+            "Private garden",
+            "Garage (2 cars)",
+            "Servant quarter",
+            "Guest room",
+            "Smart home automation"
+        ],
+        "unit_types": [
+            {
+                "type": "Villa – Type A (4 bed)",
+                "land_area_katha": 5,
+                "built_area_sqft": 4200,
+                "bedrooms": 5,
+                "bathrooms": 5,
+                "kitchen": 2,
+                "veranda": 4,
+                "car_parking": 3,
+                "price_lakh_bdt": 850
+            },
+            {
+                "type": "Villa – Type B (3 bed)",
+                "land_area_katha": 4,
+                "built_area_sqft": 3200,
+                "bedrooms": 4,
+                "bathrooms": 4,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_lakh_bdt": 650
+            },
+            {
+                "type": "Plot – Bare Land",
+                "land_area_katha": 5,
+                "built_area_sqft": 0,
+                "bedrooms": 0,
+                "bathrooms": 0,
+                "kitchen": 0,
+                "veranda": 0,
+                "car_parking": 0,
+                "price_lakh_bdt": 280
+            }
+        ],
+        "unit_size": "Plot 4-5 katha | Built 3200-4200 sqft",
+        "price_range": "BDT 2.8 Cr – 8.5 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/verdant-villas.pdf",
+        "project_url": "https://zenithproperties.fake/property/verdant-villas/",
+        "for_sale": true,
+        "features": [
+            "German UPVC windows",
+            "Solar panels",
+            "Rainwater harvesting",
+            "Double brick insulation"
+        ]
+    },
+    {
+        "id": "pearl-residency-03",
+        "project_name": "Pearl Residency",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "House # 22, Road # 14, Dhanmondi R/A, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=House+22+Road+14+Dhanmondi+Dhaka",
+        "latitude": 23.7461,
+        "longitude": 90.3742,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Dhanmondi",
+        "postal_code": "1205",
+        "total_floors": 12,
+        "total_units": 24,
+        "year_started": 2023,
+        "year_completion": 2026,
+        "photos": [
+            "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop"
+        ],
+        "description": "Pearl Residency is an ultra-luxury boutique apartment building in the heart of Dhanmondi, offering only two apartments per floor to ensure absolute privacy. Each unit is crafted with premium materials and bespoke interiors.",
+        "amenities": [
+            "Concierge lobby",
+            "Private elevator lobby",
+            "Sky terrace",
+            "Gym",
+            "Backup generator",
+            "Underground parking"
+        ],
+        "flat_types": [
+            {
+                "type": "A – Penthouse",
+                "size_sqft": 4500,
+                "bedrooms": 5,
+                "bathrooms": 5,
+                "kitchen": 2,
+                "veranda": 4,
+                "car_parking": 3,
+                "price_per_sqft": 16000
+            },
+            {
+                "type": "B – Grand",
+                "size_sqft": 3200,
+                "bedrooms": 4,
+                "bathrooms": 4,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_per_sqft": 14000
+            },
+            {
+                "type": "C – Classic",
+                "size_sqft": 2600,
+                "bedrooms": 4,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 2,
+                "price_per_sqft": 13000
+            }
+        ],
+        "flat_size": "2600 - 4500 sqft",
+        "price_range": "BDT 3.38 Cr - 7.2 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/pearl-residency.pdf",
+        "project_url": "https://zenithproperties.fake/property/pearl-residency/",
+        "for_sale": true,
+        "features": [
+            "Italian marble throughout",
+            "Miele kitchen appliances",
+            "Automated blinds",
+            "Private pool on penthouse"
+        ]
+    },
+    {
+        "id": "metro-hub-01",
+        "project_name": "Metro Hub",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Plot # 5, Pragati Sarani, Badda, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Plot+5+Pragati+Sarani+Badda+Dhaka",
+        "latitude": 23.7793,
+        "longitude": 90.4312,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Retail / Shopping Complex",
+        "city": "Dhaka",
+        "area": "Badda",
+        "postal_code": "1212",
+        "total_floors": 8,
+        "total_units": 200,
+        "year_started": 2022,
+        "year_completion": 2025,
+        "photos": [
+            "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1567449303078-57ad995bd329?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=1200&h=800&fit=crop"
+        ],
+        "description": "Metro Hub is a modern 8-storey shopping and lifestyle complex in Badda, designed to serve eastern Dhaka's rapidly growing population. With 200+ retail spaces, a multiplex, food court, supermarket anchor, and ample parking, it redefines retail convenience.",
+        "amenities": [
+            "Multiplex Cinema (6 screens)",
+            "Food Court (30 outlets)",
+            "Supermarket Anchor",
+            "ATM Zone",
+            "Prayer Rooms",
+            "Multi-storey car park (400 cars)",
+            "Loading bay",
+            "Brand showroom spaces"
+        ],
+        "unit_types": [
+            {
+                "type": "Standard Shop",
+                "size_sqft": 250,
+                "rooms": 1,
+                "bathrooms": 1,
+                "car_parking": 0,
+                "price_per_sqft": 35000
+            },
+            {
+                "type": "Medium Shop",
+                "size_sqft": 500,
+                "rooms": 1,
+                "bathrooms": 1,
+                "car_parking": 1,
+                "price_per_sqft": 32000
+            },
+            {
+                "type": "Large Showroom",
+                "size_sqft": 1500,
+                "rooms": 2,
+                "bathrooms": 2,
+                "car_parking": 2,
+                "price_per_sqft": 28000
+            },
+            {
+                "type": "Anchor Space",
+                "size_sqft": 10000,
+                "rooms": 10,
+                "bathrooms": 10,
+                "car_parking": 20,
+                "price_per_sqft": 20000
+            },
+            {
+                "type": "Food Court Stall",
+                "size_sqft": 150,
+                "rooms": 1,
+                "bathrooms": 0,
+                "car_parking": 0,
+                "price_per_sqft": 45000
+            }
+        ],
+        "unit_size": "150 - 10000 sqft",
+        "price_range": "BDT 67.5 Lac - 20 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/metro-hub.pdf",
+        "project_url": "https://zenithproperties.fake/property/metro-hub/",
+        "for_sale": true,
+        "features": [
+            "Central air conditioning",
+            "LED skylights",
+            "Fire suppression system",
+            "Digital directory kiosks"
+        ]
+    },
+    {
+        "id": "indigo-suites-01",
+        "project_name": "Indigo Suites Hotel",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Plot # 2, Kemal Ataturk Avenue, Banani, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Plot+2+Kemal+Ataturk+Avenue+Banani+Dhaka",
+        "latitude": 23.7939,
+        "longitude": 90.4044,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Hotel / Hospitality",
+        "city": "Dhaka",
+        "area": "Banani",
+        "postal_code": "1213",
+        "total_floors": 18,
+        "total_units": 180,
+        "star_rating": 5,
+        "year_started": 2022,
+        "year_completion": 2025,
+        "photos": [
+            "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&h=800&fit=crop"
+        ],
+        "description": "Indigo Suites is a five-star hotel investment opportunity in the upscale Banani corridor. Investors can own individual hotel units managed under the Zenith Hospitality brand, earning guaranteed rental yields with full property management included.",
+        "amenities": [
+            "Rooftop infinity pool",
+            "Spa & wellness centre",
+            "All-day dining restaurant",
+            "Sky bar",
+            "Business centre",
+            "Meeting rooms",
+            "Concierge",
+            "Valet parking",
+            "Airport transfer"
+        ],
+        "unit_types": [
+            {
+                "type": "Deluxe Room",
+                "size_sqft": 420,
+                "bedrooms": 1,
+                "bathrooms": 1,
+                "car_parking": 1,
+                "price_per_sqft": 28000,
+                "guaranteed_yield_pct": 8
+            },
+            {
+                "type": "Suite",
+                "size_sqft": 850,
+                "bedrooms": 1,
+                "bathrooms": 2,
+                "car_parking": 1,
+                "price_per_sqft": 32000,
+                "guaranteed_yield_pct": 9
+            },
+            {
+                "type": "Junior Suite",
+                "size_sqft": 650,
+                "bedrooms": 1,
+                "bathrooms": 2,
+                "car_parking": 1,
+                "price_per_sqft": 30000,
+                "guaranteed_yield_pct": 8.5
+            },
+            {
+                "type": "Presidential Suite",
+                "size_sqft": 2200,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "car_parking": 2,
+                "price_per_sqft": 40000,
+                "guaranteed_yield_pct": 10
+            }
+        ],
+        "unit_size": "420 - 2200 sqft",
+        "price_range": "BDT 1.18 Cr - 8.8 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/indigo-suites.pdf",
+        "project_url": "https://zenithproperties.fake/property/indigo-suites/",
+        "for_sale": true,
+        "features": [
+            "Guaranteed 8-10% annual yield",
+            "Professional hotel management",
+            "Fully furnished units",
+            "Brand partnerships with international operators"
+        ]
+    },
+    {
+        "id": "techpark-one-01",
+        "project_name": "TechPark One",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Gazipur Industrial Zone, Tongi, Gazipur",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Gazipur+Industrial+Zone+Tongi+Gazipur",
+        "latitude": 23.9990,
+        "longitude": 90.4130,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Industrial / Warehouse",
+        "city": "Gazipur",
+        "area": "Tongi",
+        "postal_code": "1712",
+        "total_floors": 4,
+        "total_units": 32,
+        "year_started": 2021,
+        "year_completion": 2024,
+        "photos": [
+            "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=800&fit=crop"
+        ],
+        "description": "TechPark One is a state-of-the-art multi-storey industrial and warehouse complex in Gazipur, Bangladesh's industrial heartland. Built for light manufacturing, logistics, and warehousing tenants seeking modern, compliant facilities close to Dhaka.",
+        "amenities": [
+            "32-tonne floor load capacity",
+            "Heavy vehicle access roads",
+            "Dedicated loading docks",
+            "24/7 CCTV security",
+            "ETP facility",
+            "Emergency diesel generator",
+            "Workers' canteen",
+            "Admin block"
+        ],
+        "unit_types": [
+            {
+                "type": "Small Warehouse Unit",
+                "size_sqft": 3000,
+                "clear_height_ft": 18,
+                "loading_docks": 1,
+                "car_parking": 4,
+                "price_per_sqft": 4500
+            },
+            {
+                "type": "Medium Warehouse Unit",
+                "size_sqft": 6000,
+                "clear_height_ft": 22,
+                "loading_docks": 2,
+                "car_parking": 8,
+                "price_per_sqft": 4200
+            },
+            {
+                "type": "Large Warehouse Unit",
+                "size_sqft": 12000,
+                "clear_height_ft": 25,
+                "loading_docks": 4,
+                "car_parking": 15,
+                "price_per_sqft": 3900
+            },
+            {
+                "type": "Light Manufacturing Unit",
+                "size_sqft": 8000,
+                "clear_height_ft": 22,
+                "loading_docks": 3,
+                "car_parking": 10,
+                "price_per_sqft": 4000
+            }
+        ],
+        "unit_size": "3000 - 12000 sqft",
+        "price_range": "BDT 1.35 Cr - 4.68 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/techpark-one.pdf",
+        "project_url": "https://zenithproperties.fake/property/techpark-one/",
+        "for_sale": true,
+        "features": [
+            "ISO 9001 compliant construction",
+            "Fire suppression sprinklers",
+            "Compliant with BGMEA standards",
+            "Rail siding option available"
+        ]
+    },
+    {
+        "id": "harbour-view-04",
+        "project_name": "Harbour View",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Agrabad Commercial Area, Chittagong",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Agrabad+Commercial+Area+Chittagong",
+        "latitude": 22.3330,
+        "longitude": 91.8130,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Mixed-Use",
+        "city": "Chittagong",
+        "area": "Agrabad",
+        "postal_code": "4100",
+        "total_floors": 20,
+        "total_units": 95,
+        "year_started": 2023,
+        "year_completion": 2027,
+        "photos": [
+            "https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=1200&h=800&fit=crop"
+        ],
+        "description": "Harbour View is a stunning seafront mixed-use tower in Agrabad, Chittagong — capturing panoramic views of the Bay of Bengal. The project blends luxury apartments, premium office floors, and a fine-dining restaurant podium into one iconic address.",
+        "amenities": [
+            "Panoramic sea view lounge",
+            "Infinity pool",
+            "Beach access path",
+            "Gym & spa",
+            "Restaurant podium",
+            "Private yacht jetty (planned)",
+            "Basement parking"
+        ],
+        "unit_types": [
+            {
+                "type": "Sea-View Apartment A",
+                "size_sqft": 2600,
+                "bedrooms": 4,
+                "bathrooms": 4,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_per_sqft": 10000
+            },
+            {
+                "type": "Sea-View Apartment B",
+                "size_sqft": 1800,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 9500
+            },
+            {
+                "type": "Office Space",
+                "size_sqft": 2000,
+                "rooms": 7,
+                "bathrooms": 3,
+                "car_parking": 3,
+                "price_per_sqft": 12000
+            },
+            {
+                "type": "Restaurant Space",
+                "size_sqft": 3500,
+                "rooms": 3,
+                "bathrooms": 4,
+                "car_parking": 10,
+                "price_per_sqft": 18000
+            }
+        ],
+        "unit_size": "1800 - 3500 sqft",
+        "price_range": "BDT 1.71 Cr - 6.3 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/harbour-view.pdf",
+        "project_url": "https://zenithproperties.fake/property/harbour-view/",
+        "for_sale": true,
+        "features": [
+            "Seismic zone-compliant structure",
+            "Tidal protection design",
+            "Salt-resistant facade",
+            "Fibre optic connectivity"
+        ]
+    },
+    {
+        "id": "sylvan-greens-02",
+        "project_name": "Sylvan Greens",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Sector-4, Jalshiri Abashon, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Jalshiri+Abashon+Sector+4+Dhaka",
+        "latitude": 23.7305,
+        "longitude": 90.4510,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Jalshiri Abashon",
+        "postal_code": "1229",
+        "total_floors": 11,
+        "total_units": 44,
+        "year_started": 2024,
+        "year_completion": 2027,
+        "photos": [
+            "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&h=800&fit=crop"
+        ],
+        "description": "Sylvan Greens is an eco-conscious residential development within the planned Jalshiri Abashon area. Designed with passive cooling, green rooftops, and energy-efficient systems, this project offers a sustainable urban lifestyle for forward-thinking families.",
+        "amenities": [
+            "Green rooftop with edible garden",
+            "Solar power system",
+            "Rainwater recycling plant",
+            "Community organic market",
+            "Children's nature trail",
+            "Electric vehicle charging"
+        ],
+        "flat_types": [
+            {
+                "type": "A – Sky Home",
+                "size_sqft": 2100,
+                "bedrooms": 4,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_per_sqft": 8200
+            },
+            {
+                "type": "B – Garden Home",
+                "size_sqft": 1750,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 7800
+            },
+            {
+                "type": "C – Studio Plus",
+                "size_sqft": 900,
+                "bedrooms": 2,
+                "bathrooms": 2,
+                "kitchen": 1,
+                "veranda": 1,
+                "car_parking": 1,
+                "price_per_sqft": 7200
+            }
+        ],
+        "flat_size": "900 - 2100 sqft",
+        "price_range": "BDT 64.8 Lac - 1.72 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/sylvan-greens.pdf",
+        "project_url": "https://zenithproperties.fake/property/sylvan-greens/",
+        "for_sale": true,
+        "features": [
+            "BNBC green rating target",
+            "VOC-free paints",
+            "Bamboo composite fixtures",
+            "Passive ventilation design"
+        ]
+    },
+    {
+        "id": "zen-office-park-01",
+        "project_name": "Zen Office Park",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Plot # 45, Bir Uttam Mir Shawkat Sarak, DOHS Mirpur, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Plot+45+Bir+Uttam+Mir+Shawkat+Sarak+DOHS+Mirpur+Dhaka",
+        "latitude": 23.8247,
+        "longitude": 90.3614,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=330&h=180&fit=crop",
+        "project_status": "ongoing",
+        "project_type": "Commercial",
+        "city": "Dhaka",
+        "area": "Mirpur DOHS",
+        "postal_code": "1216",
+        "total_floors": 16,
+        "total_units": 64,
+        "year_started": 2023,
+        "year_completion": 2026,
+        "photos": [
+            "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=800&fit=crop"
+        ],
+        "description": "Zen Office Park is a contemporary low-density office campus in DOHS Mirpur, offering mid-size corporate tenants a calm, campus-style work environment with abundant natural light, greenery, and top-tier infrastructure.",
+        "amenities": [
+            "Landscaped atrium",
+            "Rooftop terrace",
+            "Cafeteria",
+            "Prayer room",
+            "Gym",
+            "Secure parking (320 cars)",
+            "24/7 access control",
+            "IT server room"
+        ],
+        "unit_types": [
+            {
+                "type": "Small Office Suite",
+                "size_sqft": 800,
+                "rooms": 3,
+                "bathrooms": 1,
+                "car_parking": 2,
+                "price_per_sqft": 10000
+            },
+            {
+                "type": "Medium Office Suite",
+                "size_sqft": 1800,
+                "rooms": 7,
+                "bathrooms": 2,
+                "car_parking": 4,
+                "price_per_sqft": 9500
+            },
+            {
+                "type": "Large Office Floor",
+                "size_sqft": 4200,
+                "rooms": 16,
+                "bathrooms": 4,
+                "car_parking": 8,
+                "price_per_sqft": 9000
+            }
+        ],
+        "unit_size": "800 - 4200 sqft",
+        "price_range": "BDT 80 Lac - 3.78 Cr",
+        "brochure_url": "https://zenithproperties.fake/brochures/zen-office-park.pdf",
+        "project_url": "https://zenithproperties.fake/property/zen-office-park/",
+        "for_sale": true,
+        "features": [
+            "100% DG backup",
+            "Centralised HVAC",
+            "Structured cabling Cat6A",
+            "LEED Platinum target"
+        ]
+    },
+    {
+        "id": "lotus-square-01",
+        "project_name": "Lotus Square",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Panthapath, Kalabagan, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Panthapath+Kalabagan+Dhaka",
+        "latitude": 23.7532,
+        "longitude": 90.3837,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=330&h=180&fit=crop",
+        "project_status": "handovered",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Kalabagan",
+        "postal_code": "1205",
+        "total_floors": 9,
+        "total_units": 18,
+        "year_started": 2018,
+        "year_completion": 2022,
+        "handover_date": "2022-06-15",
+        "photos": [
+            "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop"
+        ],
+        "description": "Lotus Square is a completed and handed-over boutique residential project in Kalabagan. All units were delivered on time with premium finishings, and the building is fully occupied by its proud owners.",
+        "amenities": [
+            "Covered parking",
+            "Generator backup",
+            "CCTV",
+            "Intercom",
+            "Rooftop space"
+        ],
+        "flat_types": [
+            {
+                "type": "A",
+                "size_sqft": 2300,
+                "bedrooms": 4,
+                "bathrooms": 4,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_per_sqft": 7000
+            },
+            {
+                "type": "B",
+                "size_sqft": 1700,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 6800
+            }
+        ],
+        "flat_size": "1700 - 2300 sqft",
+        "price_range": "Sold Out",
+        "brochure_url": "https://zenithproperties.fake/brochures/lotus-square.pdf",
+        "project_url": "https://zenithproperties.fake/property/lotus-square/",
+        "for_sale": false
+    },
+    {
+        "id": "copper-lane-01",
+        "project_name": "Copper Lane",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "House # 9, Road # 3, Block-F, Rayer Bazar, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=House+9+Road+3+Block+F+Rayer+Bazar+Dhaka",
+        "latitude": 23.7415,
+        "longitude": 90.3689,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=330&h=180&fit=crop",
+        "project_status": "handovered",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Rayer Bazar",
+        "postal_code": "1207",
+        "total_floors": 8,
+        "total_units": 16,
+        "year_started": 2017,
+        "year_completion": 2021,
+        "handover_date": "2021-09-01",
+        "photos": [
+            "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1505873242700-f289a29e1724?w=1200&h=800&fit=crop"
+        ],
+        "description": "Copper Lane is a completed residential project in Rayer Bazar. All 16 units have been handed over. The building features a classic facade with modern interiors and is now a fully established residential community.",
+        "amenities": [
+            "Parking",
+            "Security",
+            "Generator",
+            "Lift"
+        ],
+        "flat_types": [
+            {
+                "type": "A",
+                "size_sqft": 1950,
+                "bedrooms": 4,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 1,
+                "price_per_sqft": 5800
+            },
+            {
+                "type": "B",
+                "size_sqft": 1450,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 5600
+            }
+        ],
+        "flat_size": "1450 - 1950 sqft",
+        "price_range": "Sold Out",
+        "brochure_url": "https://zenithproperties.fake/brochures/copper-lane.pdf",
+        "project_url": "https://zenithproperties.fake/property/copper-lane/",
+        "for_sale": false
+    },
+    {
+        "id": "amber-court-01",
+        "project_name": "Amber Court",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "House # 55, Road # 7, Adabor, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=House+55+Road+7+Adabor+Dhaka",
+        "latitude": 23.7703,
+        "longitude": 90.3513,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?w=330&h=180&fit=crop",
+        "project_status": "handovered",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Adabor",
+        "postal_code": "1207",
+        "total_floors": 7,
+        "total_units": 14,
+        "year_started": 2016,
+        "year_completion": 2020,
+        "handover_date": "2020-03-10",
+        "photos": [
+            "https://images.unsplash.com/photo-1472224371017-08207f84aaae?w=1200&h=800&fit=crop"
+        ],
+        "description": "Amber Court is a fully completed and handed-over residential building in Adabor, Dhaka. All units were successfully delivered to their owners.",
+        "amenities": [
+            "Parking",
+            "Security",
+            "Generator",
+            "Lift"
+        ],
+        "flat_types": [
+            {
+                "type": "A",
+                "size_sqft": 1600,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 5200
+            },
+            {
+                "type": "B",
+                "size_sqft": 1350,
+                "bedrooms": 3,
+                "bathrooms": 2,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 5000
+            }
+        ],
+        "flat_size": "1350 - 1600 sqft",
+        "price_range": "Sold Out",
+        "brochure_url": "https://zenithproperties.fake/brochures/amber-court.pdf",
+        "project_url": "https://zenithproperties.fake/property/amber-court/",
+        "for_sale": false
+    },
+    {
+        "id": "sunrise-enclave-01",
+        "project_name": "Sunrise Enclave",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "House # 3, Road # 1, Shyamoli, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=House+3+Road+1+Shyamoli+Dhaka",
+        "latitude": 23.7714,
+        "longitude": 90.3544,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=330&h=180&fit=crop",
+        "project_status": "handovered",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Shyamoli",
+        "postal_code": "1207",
+        "total_floors": 8,
+        "total_units": 16,
+        "year_started": 2015,
+        "year_completion": 2019,
+        "handover_date": "2019-07-22",
+        "photos": [
+            "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200&h=800&fit=crop"
+        ],
+        "description": "Sunrise Enclave is a completed mid-rise residential building in Shyamoli with quality construction and functional floor plans that continue to be appreciated by its residents.",
+        "amenities": [
+            "Covered parking",
+            "Security guard",
+            "Generator",
+            "Lift"
+        ],
+        "flat_types": [
+            {
+                "type": "A",
+                "size_sqft": 1700,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 1,
+                "price_per_sqft": 5500
+            },
+            {
+                "type": "B",
+                "size_sqft": 1400,
+                "bedrooms": 3,
+                "bathrooms": 2,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 5300
+            }
+        ],
+        "flat_size": "1400 - 1700 sqft",
+        "price_range": "Sold Out",
+        "brochure_url": "https://zenithproperties.fake/brochures/sunrise-enclave.pdf",
+        "project_url": "https://zenithproperties.fake/property/sunrise-enclave/",
+        "for_sale": false
+    },
+    {
+        "id": "blue-horizon-tower-01",
+        "project_name": "Blue Horizon Tower",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Plot # 11, Khilkhet, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Plot+11+Khilkhet+Dhaka",
+        "latitude": 23.8332,
+        "longitude": 90.4127,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=330&h=180&fit=crop",
+        "project_status": "upcoming",
+        "project_type": "Residential",
+        "city": "Dhaka",
+        "area": "Khilkhet",
+        "postal_code": "1229",
+        "total_floors": 18,
+        "total_units": 72,
+        "year_started": 2025,
+        "year_completion": 2028,
+        "photos": [
+            "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&h=800&fit=crop"
+        ],
+        "description": "Blue Horizon Tower is an upcoming premium residential project in Khilkhet, designed to the highest international standards. Pre-launch registration is open for early buyers who will benefit from special introductory pricing.",
+        "amenities": [
+            "Sky lounge",
+            "Infinity pool",
+            "Gym",
+            "Co-working space",
+            "Smart home automation",
+            "EV parking",
+            "24/7 concierge"
+        ],
+        "flat_types": [
+            {
+                "type": "A – Sky Suite",
+                "size_sqft": 3000,
+                "bedrooms": 4,
+                "bathrooms": 4,
+                "kitchen": 1,
+                "veranda": 3,
+                "car_parking": 2,
+                "price_per_sqft": 10500
+            },
+            {
+                "type": "B – Premium",
+                "size_sqft": 2200,
+                "bedrooms": 4,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 2,
+                "price_per_sqft": 9800
+            },
+            {
+                "type": "C – Comfort",
+                "size_sqft": 1600,
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "kitchen": 1,
+                "veranda": 2,
+                "car_parking": 1,
+                "price_per_sqft": 9200
+            },
+            {
+                "type": "D – Compact",
+                "size_sqft": 1100,
+                "bedrooms": 2,
+                "bathrooms": 2,
+                "kitchen": 1,
+                "veranda": 1,
+                "car_parking": 1,
+                "price_per_sqft": 8800
+            }
+        ],
+        "flat_size": "1100 - 3000 sqft",
+        "price_range": "BDT 96.8 Lac - 3.15 Cr (Pre-Launch)",
+        "brochure_url": "https://zenithproperties.fake/brochures/blue-horizon-tower.pdf",
+        "project_url": "https://zenithproperties.fake/property/blue-horizon-tower/",
+        "for_sale": true,
+        "registration_open": true,
+        "features": [
+            "Smart lock entry",
+            "AI-powered energy management",
+            "Double-glazed acoustic windows"
+        ]
+    },
+    {
+        "id": "emerald-commerce-01",
+        "project_name": "Emerald Commerce Centre",
+        "developer": "Zenith Properties Ltd.",
+        "project_address": "Motijheel Commercial Area, Dhaka",
+        "google_map_url": "https://www.google.com/maps/search/?api=1&query=Motijheel+Commercial+Area+Dhaka",
+        "latitude": 23.7278,
+        "longitude": 90.4182,
+        "photo_thumbnail": "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=330&h=180&fit=crop",
+        "project_status": "upcoming",
+        "project_type": "Commercial",
+        "city": "Dhaka",
+        "area": "Motijheel",
+        "postal_code": "1000",
+        "total_floors": 30,
+        "total_units": 120,
+        "year_started": 2026,
+        "year_completion": 2030,
+        "photos": [
+            "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=1200&h=800&fit=crop",
+            "https://images.unsplash.com/photo-1555636222-cae831e670b3?w=1200&h=800&fit=crop"
+        ],
+        "description": "Emerald Commerce Centre is Zenith's most ambitious upcoming commercial project — a 30-storey landmark tower in Dhaka's central business district of Motijheel. Designed for banking, finance, and multinational corporations seeking a prestigious address in Bangladesh's financial capital.",
+        "amenities": [
+            "Triple-height grand lobby",
+            "Dedicated banking hall floors",
+            "Sky boardroom on 28th floor",
+            "300-car automated parking",
+            "Executive lounge",
+            "Fine dining restaurant"
+        ],
+        "unit_types": [
+            {
+                "type": "Boutique Office",
+                "size_sqft": 1000,
+                "rooms": 4,
+                "bathrooms": 2,
+                "car_parking": 2,
+                "price_per_sqft": 15000
+            },
+            {
+                "type": "Corporate Floor",
+                "size_sqft": 5000,
+                "rooms": 20,
+                "bathrooms": 6,
+                "car_parking": 8,
+                "price_per_sqft": 14000
+            },
+            {
+                "type": "Banking Hall",
+                "size_sqft": 8000,
+                "rooms": 5,
+                "bathrooms": 8,
+                "car_parking": 15,
+                "price_per_sqft": 16000
+            },
+            {
+                "type": "Penthouse Office",
+                "size_sqft": 12000,
+                "rooms": 30,
+                "bathrooms": 12,
+                "car_parking": 20,
+                "price_per_sqft": 18000
+            }
+        ],
+        "unit_size": "1000 - 12000 sqft",
+        "price_range": "BDT 1.5 Cr - 21.6 Cr (Pre-Registration)",
+        "brochure_url": "https://zenithproperties.fake/brochures/emerald-commerce.pdf",
+        "project_url": "https://zenithproperties.fake/property/emerald-commerce/",
+        "for_sale": true,
+        "registration_open": true,
+        "features": [
+            "Carbon-neutral design",
+            "Hydrogen-ready power backup",
+            "Facial recognition access",
+            "AI-managed building systems"
+        ]
+    }
+]

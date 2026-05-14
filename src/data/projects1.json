@@ -1,0 +1,654 @@
+[
+  {
+    "id": "homes-26",
+    "project_name": "Homes-26",
+    "project_address": "House # 04, Road # 1/A, Block # B, Mohammadi Housing Ltd., Mohammadpur, Dhaka",
+    "google_map_url": "http://maps.google.com/?q=House%20#%2004,%20Road%20#%201/A,%20Block%20#%20B,%20Mohammadi%20Housing%20Ltd.,%20Mohammadpur,%20Dhaka",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/26-1-scaled-330x180.jpg",
+    "project_status": "ongoing",
+    "project_type": "Residential",
+    "city": "Mohammadpur",
+    "area": "Dhaka",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/26-1-scaled.jpg",
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/26-1-1.jpg",
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/26-2.jpg"
+    ],
+    "description": "A residential project in Mohammadi Housing Ltd., Mohammadpur offering flat types A–D ranging from 1350 to 1800 sqft with 3–4 bedrooms, 3–4 bathrooms, kitchen, verandas, and car parking.",
+    "flat_types": [
+      {
+        "type": "A",
+        "size_sqft": 1800,
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "B",
+        "size_sqft": 1750,
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "C",
+        "size_sqft": 1450,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "D",
+        "size_sqft": 1350,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      }
+    ],
+    "flat_size": "1350 - 1800 sqft",
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-26/",
+    "postal_code": "1207",
+    "for_sale": true
+  },
+  {
+    "id": "homes-48",
+    "project_name": "Homes-48",
+    "project_address": "House 13, Adersha Chyanir, Saymoli",
+    "google_map_url": "http://maps.google.com/?q=House%2013,%20Adersha%20Chyanir,%20Saymoli",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/48-scaled-330x180.jpg",
+    "project_status": "ongoing",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": "Saymoli",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/48-scaled.jpg"
+    ],
+    "description": "A residential project in Adersha Chyanir, Saymoli offering flat type A of 1600 sqft with 3 bedrooms, 3 bathrooms, kitchen, verandas, and car parking.",
+    "flat_types": [
+      {
+        "type": "A",
+        "size_sqft": 1600,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      }
+    ],
+    "flat_size": "1600 sqft",
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-48/",
+    "for_sale": true
+  },
+  {
+    "id": "homes-47",
+    "project_name": "Homes-47",
+    "project_address": "House # 81/C, Road # 3, Mohammadi Housing Ltd., Mohammadpur, Dhaka",
+    "google_map_url": "http://maps.google.com/?q=House%20#%2081/C,%20Road%20#%203,%20Mohammadi%20Housing%20Ltd.,%20Mohammadpur,%20Dhaka",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/47-scaled-330x180.jpg",
+    "project_status": "ongoing",
+    "project_type": "Residential",
+    "city": "Mohammadpur",
+    "area": "Dhaka",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/47-scaled.jpg"
+    ],
+    "description": "A residential project in Mohammadi Housing Ltd., Mohammadpur offering flat types A–C ranging from 1300 to 1800 sqft with 3–4 bedrooms, 3–4 bathrooms, kitchen, verandas, and car parking.",
+    "flat_types": [
+      {
+        "type": "A",
+        "size_sqft": 1800,
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "B",
+        "size_sqft": 1300,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "C",
+        "size_sqft": 1325,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      }
+    ],
+    "flat_size": "1300 - 1800 sqft",
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-47/",
+    "postal_code": "1207",
+    "for_sale": true
+  },
+  {
+    "id": "homes-40",
+    "project_name": "Homes-40",
+    "project_address": "House # 30, Road # 2, Sector - 4",
+    "google_map_url": "http://maps.google.com/?q=House%20#%2030,%20Road%20#%202,%20Sector%20-%204",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/40-scaled-330x180.jpg",
+    "project_status": "ongoing",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": "Uttara",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/40-scaled.jpg"
+    ],
+    "description": "A residential project in Sector-4, Uttara offering flat types A, C, D ranging from 1600 to 2300 sqft with 3–4 bedrooms, 3–4 bathrooms, kitchen, verandas, and car parking.",
+    "flat_types": [
+      {
+        "type": "A",
+        "size_sqft": 2300,
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "D",
+        "size_sqft": 1600,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 2,
+        "car_parking": 1
+      },
+      {
+        "type": "C",
+        "size_sqft": 1600,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 2,
+        "car_parking": 1
+      }
+    ],
+    "flat_size": "1600 - 2300 sqft",
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-40/",
+    "for_sale": true
+  },
+  {
+    "id": "homes-43",
+    "project_name": "Homes-43",
+    "project_address": "House # 56,57, & Road # 2, House # 80/D, Road # 3, Mohammadi Housing Ltd., Mohammadpur, Dhaka",
+    "google_map_url": "http://maps.google.com/?q=House%20#%2056,57,%20&%20Road%20#%202,%20%20House%20#%2080/D,%20Road%20#%203,%20Mohammadi%20Housing%20Ltd.,",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/43-scaled-330x180.jpg",
+    "project_status": "ongoing",
+    "project_type": "Residential",
+    "city": "Mohammadpur",
+    "area": "Dhaka",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/43-scaled.jpg"
+    ],
+    "description": "A large residential project in Mohammadi Housing Ltd., Mohammadpur offering flat types A–D ranging from 1328 to 1530 sqft with 3 bedrooms, 4 bathrooms, kitchen, verandas, and car parking.",
+    "flat_types": [
+      {
+        "type": "A",
+        "size_sqft": 1456,
+        "bedrooms": 3,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "B",
+        "size_sqft": 1530,
+        "bedrooms": 3,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "C",
+        "size_sqft": 1328,
+        "bedrooms": 3,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "D",
+        "size_sqft": 1500,
+        "bedrooms": 3,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      }
+    ],
+    "flat_size": "1328 - 1530 sqft",
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-43/",
+    "for_sale": true
+  },
+  {
+    "id": "homes-36",
+    "project_name": "Homes-36",
+    "project_address": "House # 23, Road # 11, Mohammadi Housing Society, Mohammadpur, Dhaka",
+    "google_map_url": "http://maps.google.com/?q=House%20#%2023,%20Road%20#%2011,%20Mohammadi%20Housing%20Society,",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/36-scaled-330x180.jpg",
+    "project_status": "ongoing",
+    "project_type": "Residential",
+    "city": "Mohammadpur",
+    "area": "Dhaka",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/36-scaled.jpg"
+    ],
+    "description": "A residential project in Mohammadi Housing Society offering flat types A–D ranging from 1300 to 1665 sqft with 3–4 bedrooms, 3 bathrooms, kitchen, verandas, and car parking.",
+    "flat_types": [
+      {
+        "type": "A",
+        "size_sqft": 1665,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 4,
+        "car_parking": 1
+      },
+      {
+        "type": "B",
+        "size_sqft": 1420,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "C",
+        "size_sqft": 1400,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      },
+      {
+        "type": "D",
+        "size_sqft": 1300,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      }
+    ],
+    "flat_size": "1300 - 1665 sqft",
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-36/",
+    "for_sale": true
+  },
+  {
+    "id": "homes-45",
+    "project_name": "Homes-45",
+    "project_address": "House # 43/A, Road # 2, Mohammadi Housing Ltd., Mohammadpur, Dhaka",
+    "google_map_url": "http://maps.google.com/?q=House%20#%2043/A,%20Road%20#%202,%20Mohammadi%20Housing%20Ltd.,",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/45-scaled-330x180.jpg",
+    "project_status": "ongoing",
+    "project_type": "Residential",
+    "city": "Mohammadpur",
+    "area": "Dhaka",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/45-scaled.jpg"
+    ],
+    "description": "A residential project in Mohammadi Housing Ltd., Mohammadpur offering flat type A of 1380 sqft with 3 bedrooms, 3 bathrooms, kitchen, verandas, and car parking.",
+    "flat_types": [
+      {
+        "type": "A",
+        "size_sqft": 1380,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "veranda": 3,
+        "car_parking": 1
+      }
+    ],
+    "flat_size": "1380 sqft",
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-45/",
+    "for_sale": true
+  },
+  {
+    "id": "homes-44",
+    "project_name": "Homes-44",
+    "project_address": "House No. 288, Road No. 6, Mohammadi Housing Society, Mohammadpur, Dhaka",
+    "google_map_url": "http://maps.google.com/?q=House%20No.%20288,%20Road%20No.%206,%20Mohammadi%20Housing%20Society",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/44-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Mohammadpur",
+    "area": "Dhaka",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/44.jpg"
+    ],
+    "description": "A completed and handed-over residential project in Mohammadi Housing Society, Mohammadpur.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-44/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-33",
+    "project_name": "Homes-33",
+    "project_address": "26, Umesh Datta Road, Bokshi Bazar, Dhaka",
+    "google_map_url": "http://maps.google.com/?q=26,%20Umesh%20Datta%20Road,%20Bokshi%20Bazar,%20Dhaka",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/33-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": "Bokshi Bazar",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/33.jpg"
+    ],
+    "description": "A completed and handed-over residential project at Umesh Datta Road, Bokshi Bazar, Dhaka.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-33/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-32",
+    "project_name": "Homes-32",
+    "project_address": "House # 40, Road # 3/B, Mohammadi Housing Ltd., Mohammadpur, Dhaka",
+    "google_map_url": "http://maps.google.com/?q=House%20#%2040,%20Road%20#%203/B,%20Mohammadi%20Housing%20Ltd.,%20Mohammadpur,%20Dhaka",
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/32-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Mohammadpur",
+    "area": "Dhaka",
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/32.jpg"
+    ],
+    "description": "A completed and handed-over residential project in Mohammadi Housing Ltd., Mohammadpur.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-32/",
+    "postal_code": "1207",
+    "for_sale": false
+  },
+  {
+    "id": "homes-28",
+    "project_name": "Homes-28",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/28-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/28.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-28/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-24",
+    "project_name": "Homes-24",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/24-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/24.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-24/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-23",
+    "project_name": "Homes-23",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/23-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/23.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-23/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-22",
+    "project_name": "Homes-22",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/22-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/22.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-22/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-19",
+    "project_name": "Homes-19",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/19-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/19.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-19/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-17",
+    "project_name": "Homes-17",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/17-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/17.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-17/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-16",
+    "project_name": "Homes-16",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/16-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/16.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-16/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-15",
+    "project_name": "Homes-15",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/15..-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/15...jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-15/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-14",
+    "project_name": "Homes-14",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/14-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/14.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-14/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-06",
+    "project_name": "Homes-06",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/06-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/06.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-06/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-03",
+    "project_name": "Homes-03",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/03-1-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/03-1.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-03/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-02",
+    "project_name": "Homes-02",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/02-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/02.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-02/",
+    "for_sale": false
+  },
+  {
+    "id": "homes-01",
+    "project_name": "Homes-01",
+    "project_address": null,
+    "google_map_url": null,
+    "photo_thumbnail": "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/01-330x180.jpg",
+    "project_status": "handovered",
+    "project_type": "Residential",
+    "city": "Dhaka",
+    "area": null,
+    "photos": [
+      "https://mdl.mohammadi-group.com/wp-content/uploads/2020/03/01.jpg"
+    ],
+    "description": "A completed and handed-over residential project by Mohammadi Developers Ltd.",
+    "flat_types": [],
+    "flat_size": null,
+    "brochure_url": "http://mdl.mohammadi-group.com/wp-content/uploads/2020/03/Aplication.pdf",
+    "project_url": "https://mdl.mohammadi-group.com/property/homes-01-2/",
+    "for_sale": false
+  }
+]

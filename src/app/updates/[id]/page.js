@@ -1,20 +1,57 @@
 "use client";
 
-import { use } from "react";
+import React, { useState, useEffect, use } from 'react';
 import PageHero from "@/components/PageHero";
-import updatesData from "@/data/updates.json";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Calendar, ArrowLeft, Share2, Bookmark } from "lucide-react";
+import { Calendar, ArrowLeft, Share2, Bookmark, Loader2 } from "lucide-react";
 import { notFound } from "next/navigation";
 
 export default function UpdateDetails({ params }) {
-  // In Next.js 15+, params is a promise
   const resolvedParams = use(params);
   const { id } = resolvedParams;
 
-  const update = updatesData.find((u) => u.id === id);
+  const [update, setUpdate] = useState(null);
+  const [relatedUpdates, setRelatedUpdates] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const [updateRes, allRes] = await Promise.all([
+          fetch(`/api/updates/${id}`),
+          fetch('/api/updates')
+        ]);
+        
+        const updateData = await updateRes.json();
+        const allData = await allRes.json();
+
+        if (updateData.error) {
+          setUpdate(null);
+        } else {
+          setUpdate(updateData);
+        }
+
+        if (Array.isArray(allData)) {
+          setRelatedUpdates(allData.filter(u => u.slug !== id && u.id != id).slice(0, 3));
+        }
+      } catch (err) {
+        console.error('Failed to fetch update details:', err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchData();
+  }, [id]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <Loader2 className="w-10 h-10 text-brand-green animate-spin" />
+      </div>
+    );
+  }
 
   if (!update) {
     notFound();
@@ -25,7 +62,7 @@ export default function UpdateDetails({ params }) {
       <div className="relative h-[60vh] min-h-[500px] w-full flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
-            src={update.image} 
+            src={update.image || '/slider1.jpeg'} 
             alt={update.title} 
             fill 
             priority
@@ -72,31 +109,17 @@ export default function UpdateDetails({ params }) {
               Back to Updates
             </Link>
 
-            <article className="prose prose-lg max-w-none text-foreground">
-              <p className="text-xl text-foreground font-medium leading-relaxed mb-8 italic border-l-4 border-brand-green pl-6">
-                {update.excerpt}
-              </p>
+            <article className="prose prose-lg max-w-none text-foreground dark:prose-invert">
+              {update.excerpt && (
+                <p className="text-xl text-foreground font-medium leading-relaxed mb-8 italic border-l-4 border-brand-green pl-6">
+                  {update.excerpt}
+                </p>
+              )}
               
-              <div className="text-brand-medium-gray dark:text-brand-white/70 leading-loose space-y-6">
-                <p>
-                  Dhaka, Bangladesh — Mohammadi Developers Ltd (MDL) continues to set new benchmarks in the real estate industry. 
-                  This recent update highlights our ongoing commitment to excellence, innovation, and community service. 
-                  As a leading name in the sector, we believe in transparency and keeping our stakeholders informed about 
-                  our major milestones, award wins, and corporate social responsibility initiatives.
-                </p>
-                <p>
-                  Our projects are designed with a focus on sustainability and modern living standards, ensuring that 
-                  every resident experiences the premium quality that the Mohammadi Group of Companies is known for. 
-                  Whether it's a prestigious award for urban development or the launch of a new luxury project, 
-                  each step we take is dedicated to serving mankind and building a better future for Bangladesh.
-                </p>
-                <h3 className="text-2xl font-bold text-foreground mt-12 mb-6">Key Highlights</h3>
-                <p>
-                  We focus on quality construction conforming to ACI & ASTM codes, ensuring timely handover and dedicated service. 
-                  Our corporate philosophy remains simple: Give the customer value for money. 
-                  This award/event is a testament to the hard work and dedication of our entire team.
-                </p>
-              </div>
+              <div 
+                className="text-brand-medium-gray dark:text-brand-white/70 leading-loose space-y-6"
+                dangerouslySetInnerHTML={{ __html: update.content }}
+              />
 
               <div className="mt-16 pt-8 border-t border-brand-soft-gray dark:border-zinc-800 flex flex-wrap items-center justify-between gap-6">
                 <div className="flex items-center gap-4">
@@ -122,11 +145,11 @@ export default function UpdateDetails({ params }) {
                   Related Updates
                 </h4>
                 <div className="space-y-8">
-                  {updatesData.filter(u => u.id !== id).slice(0, 3).map(related => (
-                    <Link key={related.id} href={`/updates/${related.id}`} className="group block">
+                  {relatedUpdates.map(related => (
+                    <Link key={related.id} href={`/updates/${related.slug || related.id}`} className="group block">
                       <div className="flex gap-4">
                         <div className="relative w-20 h-20 shrink-0 overflow-hidden rounded-sm">
-                          <Image src={related.image} alt={related.title} fill className="object-cover transition-transform group-hover:scale-110" />
+                          <Image src={related.image || '/slider1.jpeg'} alt={related.title} fill className="object-cover transition-transform group-hover:scale-110" />
                         </div>
                         <div>
                           <p className="text-[10px] font-bold text-brand-green uppercase tracking-widest mb-1">{related.date}</p>
@@ -137,6 +160,9 @@ export default function UpdateDetails({ params }) {
                       </div>
                     </Link>
                   ))}
+                  {relatedUpdates.length === 0 && (
+                    <p className="text-xs text-brand-medium-gray">No other updates found.</p>
+                  )}
                 </div>
               </div>
 

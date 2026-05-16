@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState, useEffect } from 'react';
 import PageHero from "@/components/PageHero";
 import updatesData from "@/data/updates.json";
 import Image from "next/image";
@@ -8,6 +9,34 @@ import { motion } from "framer-motion";
 import { Calendar, ArrowRight } from "lucide-react";
 
 export default function UpdatesListing() {
+  const [updates, setUpdates] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchUpdates() {
+      try {
+        const res = await fetch('/api/updates');
+        const data = await res.json();
+        if (Array.isArray(data)) {
+          setUpdates(data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch updates:', err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchUpdates();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <main className="bg-background dark:bg-black min-h-screen flex items-center justify-center">
+        <div className="w-10 h-10 border-4 border-brand-green/30 border-t-brand-green rounded-full animate-spin"></div>
+      </main>
+    );
+  }
+
   return (
     <main className="bg-background dark:bg-black min-h-screen transition-colors duration-500">
       <PageHero 
@@ -20,7 +49,7 @@ export default function UpdatesListing() {
       <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {updatesData.map((update, index) => (
+            {updates.map((update, index) => (
               <motion.div
                 key={update.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -29,10 +58,10 @@ export default function UpdatesListing() {
                 viewport={{ once: true }}
                 className="group bg-brand-light-gray dark:bg-zinc-900 border border-brand-soft-gray dark:border-zinc-800 overflow-hidden hover:shadow-2xl transition-all duration-500 rounded-sm"
               >
-                <Link href={`/updates/${update.id}`} className="block">
+                <Link href={`/updates/${update.slug || update.id}`} className="block">
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Image 
-                      src={update.image} 
+                      src={update.image || '/slider1.jpeg'} 
                       alt={update.title} 
                       fill 
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -54,7 +83,7 @@ export default function UpdatesListing() {
                     <span>{update.source}</span>
                   </div>
                   
-                  <Link href={`/updates/${update.id}`}>
+                  <Link href={`/updates/${update.slug || update.id}`}>
                     <h4 className="text-xl font-bold text-foreground mb-4 group-hover:text-brand-green transition-colors leading-tight min-h-[3.5rem]">
                       {update.title}
                     </h4>
@@ -65,7 +94,7 @@ export default function UpdatesListing() {
                   </p>
                   
                   <Link 
-                    href={`/updates/${update.id}`}
+                    href={`/updates/${update.slug || update.id}`}
                     className="flex items-center gap-2 text-brand-dark-green dark:text-brand-green font-bold text-xs tracking-widest hover:text-brand-green transition-all uppercase"
                   >
                     Read More <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />

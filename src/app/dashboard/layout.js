@@ -59,11 +59,14 @@ export default function DashboardLayout({ children }) {
 
   if (!user) return null;
 
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
+
   const menuItems = [
-    { icon: LayoutDashboard, label: 'Overview', href: '/dashboard', active: true },
-    { icon: Building2, label: 'Projects', href: '/dashboard/projects' },
-    { icon: Users, label: 'Team Members', href: '/dashboard/team' },
-    { icon: Settings, label: 'Settings', href: '/dashboard/settings' },
+    { icon: LayoutDashboard, label: 'Overview', href: '/dashboard', active: pathname === '/dashboard' },
+    { icon: Building2, label: 'Projects', href: '/dashboard/projects', active: pathname.startsWith('/dashboard/projects') },
+    { icon: Bell, label: 'Media & Events', href: '/dashboard/updates', active: pathname.startsWith('/dashboard/updates') },
+    { icon: Users, label: 'Testimonials', href: '/dashboard/testimonials', active: pathname.startsWith('/dashboard/testimonials') },
+    { icon: Settings, label: 'Settings', href: '/dashboard/settings', active: pathname === '/dashboard/settings' },
   ];
 
   return (

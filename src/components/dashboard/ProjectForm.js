@@ -110,6 +110,36 @@ export default function ProjectForm({ project, onSave, onCancel }) {
         }
     };
 
+    const handleBulkFileUpload = async (e) => {
+        const files = Array.from(e.target.files);
+        if (files.length === 0) return;
+
+        setUploading(true);
+        
+        for (const file of files) {
+            const data = new FormData();
+            data.append('file', file);
+
+            try {
+                const res = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: data
+                });
+                const result = await res.json();
+                
+                if (result.success) {
+                    setFormData(prev => ({ 
+                        ...prev, 
+                        photos: [...prev.photos, result.url] 
+                    }));
+                }
+            } catch (error) {
+                console.error('Upload failed for file:', file.name, error);
+            }
+        }
+        setUploading(false);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
@@ -415,6 +445,62 @@ export default function ProjectForm({ project, onSave, onCancel }) {
                                 </label>
                             </div>
                         </div>
+                    </section>
+
+                    <section className="bg-white dark:bg-zinc-950 p-8 rounded-3xl border border-brand-soft-gray dark:border-zinc-900 shadow-sm">
+                        <div className="flex items-center justify-between mb-6">
+                            <h3 className="text-lg font-bold flex items-center gap-2">
+                                <span className="w-1.5 h-6 bg-brand-green rounded-full"></span>
+                                Project Gallery
+                            </h3>
+                            {formData.photos.length > 0 && (
+                                <button 
+                                    type="button"
+                                    onClick={() => setFormData(prev => ({ ...prev, photos: [] }))}
+                                    className="text-xs font-bold text-red-500 hover:underline"
+                                >
+                                    Clear All
+                                </button>
+                            )}
+                        </div>
+                        
+                        <div className="grid grid-cols-3 gap-3 mb-6">
+                            {formData.photos.map((url, idx) => (
+                                <div key={idx} className="relative aspect-square rounded-xl overflow-hidden group border border-brand-soft-gray dark:border-zinc-800">
+                                    <Image 
+                                        src={url} 
+                                        alt={`Gallery ${idx}`} 
+                                        fill 
+                                        className="object-cover"
+                                    />
+                                    <button 
+                                        type="button"
+                                        onClick={() => handleArrayRemove('photos', idx)}
+                                        className="absolute top-1 right-1 p-1 bg-red-500 text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
+                                    >
+                                        <X className="w-3 h-3" />
+                                    </button>
+                                </div>
+                            ))}
+                            <label className="aspect-square rounded-xl border-2 border-dashed border-brand-soft-gray dark:border-zinc-800 flex flex-col items-center justify-center cursor-pointer hover:bg-brand-light-gray dark:hover:bg-zinc-900 transition-all">
+                                <input 
+                                    type="file" 
+                                    multiple 
+                                    className="hidden" 
+                                    accept="image/*"
+                                    onChange={handleBulkFileUpload}
+                                />
+                                <Plus className="w-6 h-6 text-zinc-400 mb-1" />
+                                <span className="text-[10px] font-bold text-zinc-500 uppercase">Add Photos</span>
+                            </label>
+                        </div>
+                        
+                        {uploading && (
+                            <div className="flex items-center gap-2 text-brand-green text-xs font-bold animate-pulse">
+                                <Loader2 className="w-3 h-3 animate-spin" />
+                                Uploading gallery photos...
+                            </div>
+                        )}
                     </section>
 
                     <section className="bg-white dark:bg-zinc-950 p-8 rounded-3xl border border-brand-soft-gray dark:border-zinc-900 shadow-sm">

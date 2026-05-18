@@ -3,8 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import bcrypt from 'bcryptjs';
 
-// Default MongoDB URI supplied by user
-const DEFAULT_MONGO_URI = 'mongodb+srv://sadatcse_db_user:ZvabYB7yGh0BKLH1@cluster0.4pedc41.mongodb.net/mdl?retryWrites=true&w=majority&appName=Cluster0';
+// MongoDB connection URI must be configured inside .env.local as MONGODB_URI
 
 let mongoConnection = null;
 
@@ -26,7 +25,10 @@ export async function connectDB() {
 
 export async function connectMongo() {
   if (!mongoConnection) {
-    const uri = process.env.MONGODB_URI || DEFAULT_MONGO_URI;
+    const uri = process.env.MONGODB_URI;
+    if (!uri) {
+      throw new Error('MONGODB_URI is not defined in environment variables! Please configure it in .env.local.');
+    }
     try {
       mongoose.set('strictQuery', false);
       mongoConnection = await mongoose.connect(uri, {

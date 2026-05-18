@@ -56,7 +56,7 @@ export default function ContactClient() {
 
   return (
     <div className="bg-background dark:bg-black min-h-screen font-sans selection:bg-brand-green selection:text-white pb-20 transition-colors duration-500">
-      
+
       {/* Header Banner */}
       <section className="bg-zinc-950 pt-32 pb-20 px-4 text-center border-b border-zinc-800 transition-colors duration-500">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Contact Us</h1>
@@ -68,7 +68,7 @@ export default function ContactClient() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-[-3rem] relative z-10">
         <div className="bg-brand-light-gray dark:bg-zinc-900 rounded-3xl shadow-2xl border border-brand-soft-gray dark:border-zinc-800 overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            
+
             {/* Contact Information (Left Side) */}
             <div className="bg-brand-dark-green p-10 lg:p-16 text-white flex flex-col justify-between">
               <div>
@@ -76,7 +76,7 @@ export default function ContactClient() {
                 <p className="text-green-50 mb-10 text-lg leading-relaxed font-light">
                   Have questions about our premium residential apartments or want to schedule a visit? Fill out the form, or reach out using the details below.
                 </p>
-                
+
                 <div className="space-y-8">
                   <div className="flex items-start">
                     <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-6 flex-shrink-0 border border-white/20">
@@ -131,56 +131,56 @@ export default function ContactClient() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-brand-medium-gray dark:text-brand-white/60 mb-2">Your Name (required)</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      required 
+                    <input
+                      type="text"
+                      id="name"
+                      required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full bg-background dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-800 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" 
-                      placeholder="John Doe" 
+                      className="w-full bg-background dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-800 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors"
+                      placeholder="John Doe"
                     />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-brand-medium-gray dark:text-brand-white/60 mb-2">Your Email (required)</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      required 
+                    <input
+                      type="email"
+                      id="email"
+                      required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-background dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-800 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" 
-                      placeholder="john@example.com" 
+                      className="w-full bg-background dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-800 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors"
+                      placeholder="john@example.com"
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-brand-medium-gray dark:text-brand-white/60 mb-2">Subject</label>
-                  <input 
-                    type="text" 
-                    id="subject" 
+                  <input
+                    type="text"
+                    id="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full bg-background dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-800 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" 
-                    placeholder="How can we help you?" 
+                    className="w-full bg-background dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-800 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors"
+                    placeholder="How can we help you?"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-brand-medium-gray dark:text-brand-white/60 mb-2">Your Message</label>
-                  <textarea 
-                    id="message" 
-                    rows="5" 
+                  <textarea
+                    id="message"
+                    rows="5"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full bg-background dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-800 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors resize-none" 
+                    className="w-full bg-background dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-800 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors resize-none"
                     placeholder="Write your message here..."
                   ></textarea>
                 </div>
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={loading}
                   className="w-full bg-brand-dark-green hover:bg-brand-green text-white font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2 disabled:opacity-50 disabled:hover:translate-y-0 disabled:hover:shadow-lg"
                 >
@@ -193,17 +193,17 @@ export default function ContactClient() {
           </div>
         </div>
       </div>
-      
+
       {/* Map Placeholder */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <div className="w-full h-[500px] bg-brand-light-gray dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-2xl border border-brand-soft-gray dark:border-zinc-800 relative group transition-colors duration-500">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d228.22408602609985!2d90.3582698!3d23.7621606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf96477ff501%3A0xb142d1e61509b639!2z4Kau4KeL4Ka54Ka-4Kau4KeN4Kau4Kam4KeAIOCmueCmvuCmieCmnOCmv-CmgiDgpo_gprLgpp_gpr_gpqHgpr8g4Kaw4KeH4KaV4Kaw4KeN4KahIOCmheCmq-Cmv-CmuA!5e0!3m2!1sbn!2sbd!4v1778665576084!5m2!1sbn!2sbd" 
-            width="100%" 
-            height="100%" 
-            style={{ border: 0 }} 
-            allowFullScreen="" 
-            loading="lazy" 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d228.22408602609985!2d90.3582698!3d23.7621606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf96477ff501%3A0xb142d1e61509b639!2z4Kau4KeL4Ka54Ka-4Kau4KeN4Kau4Kam4KeAIOCmueCmvuCmieCmnOCmv-CmgiDgpo_gprLgpp_gpr_gpqHgpr8g4Kaw4KeH4KaV4Kaw4KeN4KahIOCmheCmq-Cmv-CmuA!5e0!3m2!1sbn!2sbd!4v1778665576084!5m2!1sbn!2sbd"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="grayscale contrast-125 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
           ></iframe>

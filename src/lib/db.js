@@ -35,7 +35,7 @@ export async function connectMongo() {
         serverSelectionTimeoutMS: 5000, // Fail fast: 5 seconds connection timeout
       });
       console.log('✅ Connected to MongoDB Database successfully.');
-      
+
       // Trigger background auto-seeding if collection is empty
       autoSyncData().catch(err => console.error('MongoDB seeding error:', err));
     } catch (error) {
@@ -60,7 +60,7 @@ function mapDoc(doc) {
 // Auto-seed MongoDB from local files if empty
 async function autoSyncData() {
   const collections = ['projects', 'testimonials', 'updates', 'users'];
-  
+
   for (const coll of collections) {
     const Model = getModel(coll);
     try {
@@ -149,9 +149,9 @@ async function autoSyncData() {
 // The core SQL-to-MongoDB translation engine
 async function executeMongoQuery(sql, params = []) {
   await connectMongo();
-  
+
   console.log(`MongoDB Fallback Engine running query: "${sql.slice(0, 100)}..."`);
-  
+
   if (/SHOW\s+TABLES/i.test(sql)) {
     return [
       { Tables_in_db: 'projects' },
@@ -161,7 +161,7 @@ async function executeMongoQuery(sql, params = []) {
       { Tables_in_db: 'contacts' }
     ];
   }
-  
+
   let tableName = '';
   const tableMatch = sql.match(/(?:FROM|INTO|UPDATE|DELETE\s+FROM)\s+[`"]?(\w+)[`"]?/i);
   if (tableMatch) {
@@ -169,12 +169,12 @@ async function executeMongoQuery(sql, params = []) {
   } else {
     throw new Error(`Could not parse table name from SQL: ${sql}`);
   }
-  
+
   const Model = getModel(tableName);
-  
+
   if (/^SELECT/i.test(sql)) {
     const filter = {};
-    
+
     if (sql.includes('slug = ? OR id = ?') || sql.includes('id = ? OR slug = ?')) {
       const idVal = params[0];
       const isNum = !isNaN(Number(idVal));
@@ -207,7 +207,7 @@ async function executeMongoQuery(sql, params = []) {
         filter[field] = params[index];
       });
     }
-    
+
     let sortObj = {};
     if (/ORDER\s+BY\s+(\w+)\s+DESC/i.test(sql)) {
       const sortField = sql.match(/ORDER\s+BY\s+(\w+)\s+DESC/i)[1];
@@ -216,17 +216,17 @@ async function executeMongoQuery(sql, params = []) {
       const sortField = sql.match(/ORDER\s+BY\s+(\w+)\s+ASC/i)[1];
       sortObj[sortField] = 1;
     }
-    
+
     const docs = await Model.find(filter).sort(sortObj).lean();
     return docs.map(mapDoc);
   }
-  
+
   if (/^INSERT/i.test(sql)) {
     const insertMatch = sql.match(/INSERT\s+INTO\s+[`"]?\w+[`"]?\s*\(([^)]+)\)\s*VALUES\s*\(([^)]+)\)/i);
     if (!insertMatch) {
       throw new Error(`Could not parse INSERT statement: ${sql}`);
     }
-    
+
     const cols = insertMatch[1].split(',').map(c => c.replace(/[`"]/g, '').trim());
     const doc = {};
     cols.forEach((col, index) => {
@@ -235,37 +235,37 @@ async function executeMongoQuery(sql, params = []) {
         if ((val.startsWith('[') && val.endsWith(']')) || (val.startsWith('{') && val.endsWith('}'))) {
           try {
             val = JSON.parse(val);
-          } catch (e) {}
+          } catch (e) { }
         }
       }
       doc[col] = val;
     });
-    
+
     if (!doc.id) {
       const highestDoc = await Model.findOne().sort({ id: -1 });
       doc.id = highestDoc && typeof highestDoc.id === 'number' ? highestDoc.id + 1 : Date.now();
     }
-    
+
     const newDoc = await Model.create(doc);
     return { insertId: newDoc.id || newDoc._id.toString(), affectedRows: 1 };
   }
-  
+
   if (/^UPDATE/i.test(sql)) {
     const updateMatch = sql.match(/UPDATE\s+[`"]?\w+[`"]?\s+SET\s+([^]+?)\s+WHERE\s+([^]+)$/i);
     if (!updateMatch) {
       throw new Error(`Could not parse UPDATE statement: ${sql}`);
     }
-    
+
     const setClause = updateMatch[1];
     const whereClause = updateMatch[2];
-    
+
     const setCols = [];
     const setRegex = /(\w+)\s*=\s*\?/g;
     let m;
     while ((m = setRegex.exec(setClause)) !== null) {
       setCols.push(m[1]);
     }
-    
+
     const updateDoc = {};
     setCols.forEach((col, index) => {
       let val = params[index];
@@ -273,15 +273,15 @@ async function executeMongoQuery(sql, params = []) {
         if ((val.startsWith('[') && val.endsWith(']')) || (val.startsWith('{') && val.endsWith('}'))) {
           try {
             val = JSON.parse(val);
-          } catch (e) {}
+          } catch (e) { }
         }
       }
       updateDoc[col] = val;
     });
-    
+
     const whereParams = params.slice(setCols.length);
     const filterObj = {};
-    
+
     if (whereClause.includes('slug = ? OR id = ?') || whereClause.includes('id = ? OR slug = ?')) {
       const idVal = whereParams[0];
       const isNum = !isNaN(Number(idVal));
@@ -312,20 +312,20 @@ async function executeMongoQuery(sql, params = []) {
         filterObj[field] = whereParams[index];
       });
     }
-    
+
     const res = await Model.updateMany(filterObj, { $set: updateDoc });
     return { affectedRows: res.modifiedCount };
   }
-  
+
   if (/^DELETE/i.test(sql)) {
     const deleteMatch = sql.match(/DELETE\s+FROM\s+[`"]?\w+[`"]?\s+WHERE\s+([^]+)$/i);
     if (!deleteMatch) {
       throw new Error(`Could not parse DELETE statement: ${sql}`);
     }
-    
+
     const whereClause = deleteMatch[1];
     const filterObj = {};
-    
+
     if (whereClause.includes('slug = ? OR id = ?') || whereClause.includes('id = ? OR slug = ?')) {
       const idVal = params[0];
       const isNum = !isNaN(Number(idVal));
@@ -356,11 +356,11 @@ async function executeMongoQuery(sql, params = []) {
         filterObj[field] = params[index];
       });
     }
-    
+
     const res = await Model.deleteMany(filterObj);
     return { affectedRows: res.deletedCount };
   }
-  
+
   throw new Error(`Unsupported SQL query: ${sql}`);
 }
 
@@ -416,17 +416,17 @@ export async function query(sql, params) {
   try {
     // Connect to MongoDB if not already connected
     await connectMongo();
-    
+
     // Execute SQL translation engine directly on MongoDB
     const mongoResult = await executeMongoQuery(trimmedSql, params);
-    
+
     // Normalize results (e.g. format JSON fields, booleans, and numeric fields)
     if (Array.isArray(mongoResult)) {
       return mongoResult.map(normalizeRow);
     } else if (mongoResult && typeof mongoResult === 'object') {
       return mongoResult;
     }
-    
+
     return mongoResult;
   } catch (error) {
     console.error('MongoDB native query execution failed:', error.message);

@@ -22,7 +22,7 @@ export async function GET() {
 export async function POST(request) {
     try {
         const data = await request.json();
-        
+
         if (!data.name || !data.email) {
             return NextResponse.json({ error: 'Name and email are required fields.' }, { status: 400 });
         }

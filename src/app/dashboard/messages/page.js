@@ -1,15 +1,15 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { 
-  Mail, 
-  Trash2, 
-  Search, 
-  Loader2, 
-  Calendar, 
-  User, 
-  ArrowRight, 
-  Clock, 
+import {
+  Mail,
+  Trash2,
+  Search,
+  Loader2,
+  Calendar,
+  User,
+  ArrowRight,
+  Clock,
   Inbox,
   X,
   ChevronRight
@@ -81,7 +81,7 @@ export default function DashboardMessages() {
   };
 
   // Filter messages based on search term
-  const filteredMessages = messages.filter(m => 
+  const filteredMessages = messages.filter(m =>
     m.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     m.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
     (m.subject && m.subject.toLowerCase().includes(searchTerm.toLowerCase())) ||
@@ -143,8 +143,8 @@ export default function DashboardMessages() {
       {/* Toolbar */}
       <div className="relative w-full">
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-zinc-400" />
-        <input 
-          type="text" 
+        <input
+          type="text"
           placeholder="Search inquiries by client name, email, subject, or message content..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
@@ -168,8 +168,8 @@ export default function DashboardMessages() {
             {searchTerm ? "No messages match your active search terms. Try clearing the filters or searching for something else." : "You have not received any customer contact messages yet. Once someone fills out the public contact form, they will appear here!"}
           </p>
           {searchTerm && (
-            <button 
-              onClick={() => setSearchTerm('')} 
+            <button
+              onClick={() => setSearchTerm('')}
               className="mt-6 px-6 py-2 bg-brand-light-gray hover:bg-brand-green hover:text-white dark:bg-zinc-900 dark:hover:bg-zinc-800 rounded-xl font-bold text-xs uppercase tracking-wider transition-all"
             >
               Clear Search
@@ -179,7 +179,7 @@ export default function DashboardMessages() {
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           {filteredMessages.map((msg) => (
-            <div 
+            <div
               key={msg.id}
               className="bg-white dark:bg-zinc-950 p-6 rounded-3xl border border-brand-soft-gray dark:border-zinc-900 shadow-sm hover:shadow-md hover:border-brand-green/30 transition-all flex flex-col justify-between group"
             >
@@ -220,14 +220,14 @@ export default function DashboardMessages() {
 
               {/* Actions footer */}
               <div className="flex items-center justify-between border-t border-brand-light-gray dark:border-zinc-900 pt-4 mt-6">
-                <button 
+                <button
                   onClick={() => setSelectedMessage(msg)}
                   className="flex items-center gap-1.5 text-xs font-bold text-brand-green hover:underline uppercase tracking-wider"
                 >
                   Read Message
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
-                <button 
+                <button
                   onClick={() => handleDelete(msg)}
                   className="p-2 text-zinc-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 rounded-xl transition-all"
                   title="Delete message"
@@ -245,7 +245,7 @@ export default function DashboardMessages() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
           <div className="relative w-full max-w-2xl bg-white dark:bg-zinc-950 border border-brand-soft-gray dark:border-zinc-900 rounded-[32px] shadow-2xl p-8 max-h-[85vh] overflow-y-auto animate-in zoom-in-95 duration-300">
             {/* Close button */}
-            <button 
+            <button
               onClick={() => setSelectedMessage(null)}
               className="absolute top-6 right-6 p-2 rounded-2xl bg-brand-light-gray dark:bg-zinc-900 border border-brand-soft-gray dark:border-zinc-800 text-zinc-500 hover:text-brand-green hover:scale-105 active:scale-95 transition-all"
             >
@@ -260,7 +260,7 @@ export default function DashboardMessages() {
               <h2 className="text-2xl font-black text-brand-green leading-snug mb-2">
                 Inquiry Details
               </h2>
-              
+
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4 text-xs font-bold text-brand-medium-gray dark:text-zinc-400">
                 <div className="flex items-center gap-1.5">
                   <User className="w-4 h-4 text-brand-green" />
@@ -287,14 +287,14 @@ export default function DashboardMessages() {
 
             {/* Modal Footer Actions */}
             <div className="flex items-center justify-between border-t border-brand-light-gray dark:border-zinc-900 pt-6 mt-8">
-              <button 
+              <button
                 onClick={() => handleDelete(selectedMessage)}
                 className="flex items-center gap-2 px-6 py-2.5 bg-red-500/10 hover:bg-red-500 text-red-500 hover:text-white border border-red-500/20 rounded-xl font-bold text-xs uppercase tracking-wider transition-all"
               >
                 <Trash2 className="w-4.5 h-4.5" />
                 Delete Message
               </button>
-              <button 
+              <button
                 onClick={() => setSelectedMessage(null)}
                 className="px-6 py-2.5 bg-brand-green text-white hover:scale-105 active:scale-95 rounded-xl font-bold text-xs uppercase tracking-wider transition-all shadow-md"
               >

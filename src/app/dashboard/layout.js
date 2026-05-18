@@ -13,7 +13,8 @@ import {
   Search, 
   Menu, 
   X,
-  ChevronRight
+  ChevronRight,
+  Mail
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -66,6 +67,7 @@ export default function DashboardLayout({ children }) {
     { icon: Building2, label: 'Projects', href: '/dashboard/projects', active: pathname.startsWith('/dashboard/projects') },
     { icon: Bell, label: 'Media & Events', href: '/dashboard/updates', active: pathname.startsWith('/dashboard/updates') },
     { icon: Users, label: 'Testimonials', href: '/dashboard/testimonials', active: pathname.startsWith('/dashboard/testimonials') },
+    { icon: Mail, label: 'Messages', href: '/dashboard/messages', active: pathname.startsWith('/dashboard/messages') },
     { icon: Settings, label: 'Settings', href: '/dashboard/settings', active: pathname === '/dashboard/settings' },
   ];
 

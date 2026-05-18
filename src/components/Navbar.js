@@ -31,24 +31,22 @@ export default function Navbar() {
 
   return (
     <header className="fixed w-full z-[100] top-0 left-0 transition-all duration-700 pointer-events-none">
-      <div 
-        className={`w-full transition-all duration-700 flex justify-center pt-4 md:pt-6 pointer-events-none ${
-          isScrolled ? "translate-y-0" : "translate-y-0"
-        }`}
+      <div
+        className={`w-full transition-all duration-700 flex justify-center pt-4 md:pt-6 pointer-events-none ${isScrolled ? "translate-y-0" : "translate-y-0"
+          }`}
       >
         <nav
-          className={`relative transition-all duration-700 pointer-events-auto ${
-            isScrolled
-              ? "w-[98%] xl:w-[95%] max-w-7xl bg-white/90 dark:bg-black/90 backdrop-blur-2xl rounded-full px-4 md:px-8 py-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.4)] border border-black/5 dark:border-white/10"
-              : "w-full bg-transparent px-6 md:px-10 py-5"
-          }`}
+          className={`relative transition-all duration-700 pointer-events-auto ${isScrolled
+            ? "w-[98%] xl:w-[95%] max-w-7xl bg-white/90 dark:bg-black/90 backdrop-blur-2xl rounded-full px-4 md:px-8 py-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.4)] border border-black/5 dark:border-white/10"
+            : "w-full bg-transparent px-6 md:px-10 py-5"
+            }`}
         >
           <div className="flex justify-between items-center relative">
             {/* Logo */}
             <Link href="/" className="relative flex items-center group">
               <div className={`relative transition-all duration-500 ${isScrolled ? "w-32 h-8" : "w-48 h-12"}`}>
                 <Image
-                  src="/logo_dark.png"
+                  src="/logo.png"
                   alt="MDL Logo"
                   fill
                   sizes={isScrolled ? "128px" : "192px"}
@@ -67,9 +65,8 @@ export default function Navbar() {
                   onMouseLeave={() => setHoveredLink(null)}
                   className="relative px-3 2xl:px-5 py-2 group overflow-hidden whitespace-nowrap"
                 >
-                  <span className={`text-[10px] 2xl:text-[11px] font-bold tracking-[0.15em] 2xl:tracking-[0.2em] uppercase transition-colors duration-300 relative z-10 ${
-                    isScrolled ? "text-foreground" : "text-white"
-                  } group-hover:text-brand-green`}>
+                  <span className={`text-[10px] 2xl:text-[11px] font-bold tracking-[0.15em] 2xl:tracking-[0.2em] uppercase transition-colors duration-300 relative z-10 ${isScrolled ? "text-foreground" : "text-white"
+                    } group-hover:text-brand-green`}>
                     {link.name}
                   </span>
                   {hoveredLink === link.name && (
@@ -90,19 +87,17 @@ export default function Navbar() {
             {/* Right Actions */}
             <div className="hidden xl:flex items-center gap-4 2xl:gap-6">
               <ThemeToggle />
-              <button className={`transition-all duration-300 transform hover:scale-110 ${
-                isScrolled ? "text-foreground/70" : "text-white/70"
-              } hover:text-brand-green`}>
+              <button className={`transition-all duration-300 transform hover:scale-110 ${isScrolled ? "text-foreground/70" : "text-white/70"
+                } hover:text-brand-green`}>
                 <Search size={18} strokeWidth={2.5} />
               </button>
               <div className={`w-[1px] h-6 mx-1 ${isScrolled ? "bg-black/10 dark:bg-white/10" : "bg-white/10"}`}></div>
               <Link
                 href="/contact"
-                className={`flex items-center gap-2 px-6 2xl:px-8 py-3 rounded-full font-bold text-[10px] tracking-[0.2em] uppercase transition-all duration-500 relative overflow-hidden group ${
-                  isScrolled
-                    ? "bg-brand-dark-green text-white shadow-lg hover:shadow-brand-green/20"
-                    : "bg-white text-brand-dark-green hover:bg-brand-green hover:text-white"
-                }`}
+                className={`flex items-center gap-2 px-6 2xl:px-8 py-3 rounded-full font-bold text-[10px] tracking-[0.2em] uppercase transition-all duration-500 relative overflow-hidden group ${isScrolled
+                  ? "bg-brand-dark-green text-white shadow-lg hover:shadow-brand-green/20"
+                  : "bg-white text-brand-dark-green hover:bg-brand-green hover:text-white"
+                  }`}
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <Phone size={14} className="group-hover:rotate-12 transition-transform" />
@@ -111,12 +106,11 @@ export default function Navbar() {
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
               </Link>
             </div>
- 
+
             {/* Mobile Menu Toggle */}
             <button
-              className={`xl:hidden p-2.5 rounded-full transition-all duration-300 ${
-                isScrolled ? "bg-black/5 dark:bg-white/10 text-foreground dark:text-white" : "text-white bg-black/20"
-              }`}
+              className={`xl:hidden p-2.5 rounded-full transition-all duration-300 ${isScrolled ? "bg-black/5 dark:bg-white/10 text-foreground dark:text-white" : "text-white bg-black/20"
+                }`}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <Menu size={24} />
@@ -180,7 +174,7 @@ export default function Navbar() {
                 ))}
               </div>
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 1 }}
@@ -195,7 +189,7 @@ export default function Navbar() {
                     info@mohammadi-developers.com
                   </a>
                 </div>
-                
+
                 <div className="flex gap-8">
                   {['FB', 'IG', 'TW', 'LI'].map((social) => (
                     <a key={social} href="#" className="text-sm font-bold text-brand-white/40 hover:text-brand-green transition-all transform hover:-translate-y-1">

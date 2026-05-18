@@ -157,7 +157,8 @@ async function executeMongoQuery(sql, params = []) {
       { Tables_in_db: 'projects' },
       { Tables_in_db: 'testimonials' },
       { Tables_in_db: 'updates' },
-      { Tables_in_db: 'users' }
+      { Tables_in_db: 'users' },
+      { Tables_in_db: 'contacts' }
     ];
   }
   

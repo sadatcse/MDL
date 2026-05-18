@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Project() {
   const projectsData = await query('SELECT * FROM projects ORDER BY created_at DESC');
   return (

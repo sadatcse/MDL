@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Plus, Search, Loader2, Quote, Edit2, Trash2, Star } from 'lucide-react';
 import Image from 'next/image';
 import TestimonialForm from '@/components/dashboard/TestimonialForm';
+import { showSuccess, showError, showConfirm } from '@/lib/sweetalert';
 
 export default function DashboardTestimonials() {
     const [view, setView] = useState('list'); // 'list' or 'form'
@@ -42,7 +43,11 @@ export default function DashboardTestimonials() {
     };
 
     const handleDelete = async (testimonial) => {
-        if (!confirm(`Are you sure you want to delete the testimonial from "${testimonial.name}"?`)) return;
+        const confirmed = await showConfirm(
+            'Delete Testimonial?',
+            `Are you sure you want to delete the testimonial from "${testimonial.name}"?`
+        );
+        if (!confirmed) return;
 
         try {
             const res = await fetch(`/api/testimonials/${testimonial.id}`, {
@@ -50,12 +55,14 @@ export default function DashboardTestimonials() {
             });
             const result = await res.json();
             if (result.success) {
+                showSuccess('Deleted!', 'The testimonial has been deleted successfully.');
                 fetchTestimonials();
             } else {
-                alert(result.error || 'Failed to delete testimonial');
+                showError('Failed to Delete', result.error || 'Failed to delete testimonial');
             }
         } catch (error) {
             console.error('Delete failed:', error);
+            showError('Error', 'An error occurred while deleting.');
         }
     };
 

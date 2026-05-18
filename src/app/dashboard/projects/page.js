@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Plus, Search, Filter, Loader2, Building2, LayoutGrid, List as ListIcon } from 'lucide-react';
 import ProjectTable from '@/components/dashboard/ProjectTable';
 import ProjectForm from '@/components/dashboard/ProjectForm';
+import { showSuccess, showError, showConfirm } from '@/lib/sweetalert';
 
 export default function DashboardProjects() {
     const [view, setView] = useState('list'); // 'list' or 'form'
@@ -62,7 +63,11 @@ export default function DashboardProjects() {
     };
 
     const handleDelete = async (project) => {
-        if (!confirm(`Are you sure you want to delete "${project.project_name}"?`)) return;
+        const confirmed = await showConfirm(
+            'Delete Project?',
+            `Are you sure you want to delete "${project.project_name}"?`
+        );
+        if (!confirmed) return;
 
         try {
             const res = await fetch(`/api/projects/${project.slug || project.id}`, {
@@ -70,12 +75,14 @@ export default function DashboardProjects() {
             });
             const result = await res.json();
             if (result.success) {
+                showSuccess('Deleted!', 'The project has been deleted successfully.');
                 fetchProjects();
             } else {
-                alert(result.error || 'Failed to delete project');
+                showError('Failed to Delete', result.error || 'Failed to delete project');
             }
         } catch (error) {
             console.error('Delete failed:', error);
+            showError('Error', 'An error occurred while deleting.');
         }
     };
 

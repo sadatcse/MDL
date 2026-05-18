@@ -5,6 +5,7 @@ import { Plus, Search, Loader2, Calendar, Edit2, Trash2, Globe, ArrowUpRight } f
 import Image from 'next/image';
 import UpdateForm from '@/components/dashboard/UpdateForm';
 import Link from 'next/link';
+import { showSuccess, showError, showConfirm } from '@/lib/sweetalert';
 
 export default function DashboardUpdates() {
     const [view, setView] = useState('list'); // 'list' or 'form'
@@ -43,7 +44,11 @@ export default function DashboardUpdates() {
     };
 
     const handleDelete = async (update) => {
-        if (!confirm(`Are you sure you want to delete "${update.title}"?`)) return;
+        const confirmed = await showConfirm(
+            'Delete Publication?',
+            `Are you sure you want to delete "${update.title}"?`
+        );
+        if (!confirmed) return;
 
         try {
             const res = await fetch(`/api/updates/${update.id}`, {
@@ -51,12 +56,14 @@ export default function DashboardUpdates() {
             });
             const result = await res.json();
             if (result.success) {
+                showSuccess('Deleted!', 'The publication has been deleted successfully.');
                 fetchUpdates();
             } else {
-                alert(result.error || 'Failed to delete update');
+                showError('Failed to Delete', result.error || 'Failed to delete update');
             }
         } catch (error) {
             console.error('Delete failed:', error);
+            showError('Error', 'An error occurred while deleting.');
         }
     };
 

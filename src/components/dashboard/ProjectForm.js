@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Plus, Trash2, Upload, Loader2, Save, ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
+import { showSuccess, showError } from '@/lib/sweetalert';
 
 export default function ProjectForm({ project, onSave, onCancel }) {
     const [loading, setLoading] = useState(false);
@@ -104,7 +105,7 @@ export default function ProjectForm({ project, onSave, onCancel }) {
             }
         } catch (error) {
             console.error('Upload failed:', error);
-            alert('Upload failed. Please try again.');
+            showError('Upload Failed', 'Please try again.');
         } finally {
             setUploading(false);
         }
@@ -156,13 +157,14 @@ export default function ProjectForm({ project, onSave, onCancel }) {
 
             const result = await res.json();
             if (result.success) {
+                await showSuccess('Saved!', 'The project has been saved successfully.');
                 onSave();
             } else {
-                alert(result.error || 'Failed to save project');
+                showError('Failed to Save', result.error || 'Failed to save project');
             }
         } catch (error) {
             console.error('Save failed:', error);
-            alert('An error occurred while saving.');
+            showError('Error', 'An error occurred while saving.');
         } finally {
             setLoading(false);
         }

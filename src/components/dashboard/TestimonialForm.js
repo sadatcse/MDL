@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Save, ArrowLeft, Loader2, Upload, Star } from 'lucide-react';
 import Image from 'next/image';
+import { showSuccess, showError } from '@/lib/sweetalert';
 
 export default function TestimonialForm({ testimonial, onSave, onCancel }) {
     const [loading, setLoading] = useState(false);
@@ -46,7 +47,7 @@ export default function TestimonialForm({ testimonial, onSave, onCancel }) {
             }
         } catch (error) {
             console.error('Upload failed:', error);
-            alert('Upload failed. Please try again.');
+            showError('Upload Failed', 'Please try again.');
         } finally {
             setUploading(false);
         }
@@ -68,13 +69,14 @@ export default function TestimonialForm({ testimonial, onSave, onCancel }) {
 
             const result = await res.json();
             if (result.success) {
+                await showSuccess('Saved!', 'The testimonial has been saved successfully.');
                 onSave();
             } else {
-                alert(result.error || 'Failed to save testimonial');
+                showError('Failed to Save', result.error || 'Failed to save testimonial');
             }
         } catch (error) {
             console.error('Save failed:', error);
-            alert('An error occurred while saving.');
+            showError('Error', 'An error occurred while saving.');
         } finally {
             setLoading(false);
         }
